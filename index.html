@@ -43,12 +43,53 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+        #modal-background {
+            background-color: rgba(0, 0, 0, 0.45);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+        #modal-box {
+            background-color: white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            max-width: 800px;
+            min-width: 600px;
+            padding: 25px;
+            transform: translate(-50%, -50%);
+            border-radius: 4px;
+            z-index: -10;
+        }
     </style>
 </head>
 <body>
     <button type="button" class="button center">
         Open Modal
     </button>
+
+    <div id="modal-background"></div>
+    <div id="modal-box">
+        <h1>Custom Modal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum hic, veritatis quia quam dolore vitae sunt inventore? Iure, laudantium aliquid quod dolorem voluptate natus. Nisi minima ut quis saepe illo!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia molestias maxime ipsum ullam repellendus iusto dignissimos, vitae laudantium? Excepturi ducimus repudiandae consequatur deserunt harum eveniet consequuntur atque amet provident quasi.</p>
+
+        <div>
+            <button type="button" class="button">
+                Close
+            </button>
+            <button type="button" class="button">
+                Accept
+            </button>
+        </div>
+
+    </div>
+
+
     
 </body>
 </html>
